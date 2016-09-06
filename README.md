@@ -32,6 +32,18 @@ https://nodejs.org/en/download/package-manager/
 
 # Usage
 
+You can configure multiple servers into `config.js` and connect to any
+of them, such as:
+
+    # This connects to the first server in config.js
+    nodejs index.js
+    
+    # If you specify the "server" argument, you can connect to another
+    nodejs index.js server=another
+    
+    # And the last one
+    nodejs index.js server=someOther
+
 The first 3 rows (Header) contains some information of this client and the Rust
 server you connected to.
 
