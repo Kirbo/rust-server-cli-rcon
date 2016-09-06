@@ -1,0 +1,29 @@
+{
+  "name": "rust-server-cli-rcon",
+  "version": "0.1.0",
+  "description": "Command Line Interface RCON Client for Rust Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kimmo Saari <kirbo@kirbo-designs.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirbo/rust-server-cli-rcon.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "terminal-kit": "^0.24.26",
+    "websocket": "^1.0.23"
+  },
+  "bugs": {
+    "url": "https://github.com/kirbo/rust-server-cli-rcon/issues"
+  },
+  "homepage": "https://github.com/kirbo/rust-server-cli-rcon#readme",
+  "devDependencies": {},
+  "keywords": [
+    "Rust",
+    "CLI",
+    "RCON"
+  ]
+}
