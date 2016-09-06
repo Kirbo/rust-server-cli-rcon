@@ -121,11 +121,17 @@ a good project for that.
     - Server load (cpu, memory, network, I/O, etc),
     - Sensor information (e.g. temperatures),
   - Ability to log RCON commands into a logfile(s),
+  - Push notifications to all clients when another client connects
+    or disconnects,
   - Push RCON commands and responses to every clients backlog,
   - This would also ease the load on the Rust Server itself, since
     only one client would poll the `serverinfo`, instead of every
     client which is open,
-  - Etc..
+  - Provide a range of log, instead of last N number of lines.
+    This is useful if you want to see a specific range of log (e.g.
+    lines 0 - 100), rather than show all the lines and you need
+    to scroll all the way to the first line to see the first 100 lines,
+  - Etc...
 - Ability to save output into logfile(s)
 - Refactoring the code
 - Refactoring the code
