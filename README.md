@@ -37,7 +37,7 @@ The input has autocomplete for some predefined commands, simply tap
 Tabulator to access the autocomplete menu, or type a part of the
 command you want to use, such as `ser` and press TAB and it will be
 autocompleted to a word `server` and if you press TAB again, you will
-get a list of all the predefined commands starting by `server`, i.e.:
+get a list of all the predefined commands starting by `server`, e.g.:
 
 - serverinfo
 - server.writecfg
