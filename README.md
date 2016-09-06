@@ -97,7 +97,9 @@ I personally got sick and tired of the current Rust Server tools.
 There seemed not to be any out-of-the-box console (at least on Linux,
 as far as I know) and [WebRCON provided by Facepunch](http://facepunch.github.io/webrcon/#/home) only works in a 
 browser (not even on `links`). I wanted a console which could be run on
-a server without any desktop GUI.
+a server without any desktop GUI and without any modifications done to
+the Rust Server (i.e. Oxide), so that one could run a vanilla Rust
+Server and still be able to locally manage the server in command line.
 
 One reason also was to improve my Node.js skills and this seemed to be
 a good project for that.
