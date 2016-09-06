@@ -24,6 +24,9 @@ https://nodejs.org/en/download/package-manager/
     # Edit the file you just copied with your favorite editor, e.g.
     nano config.js
     
+    # Make sure you have "+rcon.web true" in your Rust server,
+    # otherwice this wont work (at least for now)..
+
     # Start the client
     nodejs index.js
 
