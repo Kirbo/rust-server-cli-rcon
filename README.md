@@ -62,7 +62,7 @@ get a list of all the predefined commands starting by `server`, e.g.:
 - server.pvp true/false
 - server.steamgroup "steamgroup ID"
 
-You can navigate the autocomplete menu via Left and Right arrows and
+You can navigate the autocomplete menu via Left and Right arrow keys and
 select the currently hilighted one by pressing Enter, or cancel the
 autocomplete by pressing ESC.
 
@@ -79,8 +79,11 @@ OR
 * press **TAB** once
 * press **Enter** twice
 
+The input has history, you can navigate the history of commands you sent
+in the current session, via Up and Down arrow keys.
+
 You can scroll the backlog via Page Up and Page Down keys. Currently
-default maximum backlog length is set to *10000* rows. 
+default maximum backlog length is set to *10000* rows.
 
 #### Exiting the client
 
