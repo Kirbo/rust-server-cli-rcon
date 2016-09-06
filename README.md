@@ -92,7 +92,14 @@ Simply press **CTRL + C** and you will be asked
 
 Closing the client wont close the Rust Server you connected to.
 
-# Motivation:
+# Custom commands
+At the moment there is only one custom command, but more will come.
+
+- `getlog length`, e.g. `getlog 1000` which will request last 1000
+  lines from Rust Server, parses the log lines and replaces the
+  console log with it. This is handy if you want to check the history.
+
+# Motivation
 I personally got sick and tired of the current Rust Server tools.
 There seemed not to be any out-of-the-box console (at least on Linux,
 as far as I know) and [WebRCON provided by Facepunch](http://facepunch.github.io/webrcon/#/home) only works in a 
