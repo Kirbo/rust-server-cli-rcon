@@ -82,7 +82,7 @@ I personally got sick and tired of the current Rust Server tools.
 There seemed not to be any out-of-the-box console (at least on Linux,
 as far as I know) and [WebRCON provided by Facepunch](http://facepunch.github.io/webrcon/#/home) only works in a 
 browser (not even on `links`). I wanted a console which could be run on
-a headless server.
+a server without any desktop GUI.
 
 One reason also was to improve my Node.js skills and this seemed to be
 a good project for that.
