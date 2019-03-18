@@ -1,13 +1,16 @@
 # rust-server-cli-rcon
 Command Line Interface RCON Client for Rust Server
 
-# Installation
+## Installation
 
-#### Installing Node.js
-Check the instructions how to install Node.js and NPM on your OS:
-https://nodejs.org/en/download/package-manager/
+### Installing Node.js
 
-#### Installing the rust-server-cli-rcon
+I suggest using [`nvm`](https://github.com/creationix/nvm) on Unix / OS X systems.
+
+### Installing the rust-server-cli-rcon
+
+    # Install Yarn
+    npm -g install yarn
 
     # Clone this repository
     git clone https://github.com/kirbo/rust-server-cli-rcon.git
@@ -16,7 +19,7 @@ https://nodejs.org/en/download/package-manager/
     cd rust-server-cli-rcon
 
     # Install dependencies
-    npm install
+    yarn install
 
     # Copy sample config file
     cp example.config.js config.js
@@ -28,21 +31,21 @@ https://nodejs.org/en/download/package-manager/
     # otherwice this wont work (at least for now)..
 
     # Start the client
-    node index.js
+    yarn start
 
-# Usage
+## Usage
 
 You can configure multiple servers into `config.js` and connect to any
 of them, such as:
 
     # This connects to the first server in config.js
-    node index.js
+    yarn start
 
     # If you specify the "server" argument, you can connect to another
-    node index.js server=another
+    yarn start server=another
 
     # And the last one
-    node index.js server=someOther
+    yarn start server=someOther
 
 The first 3 rows (Header) contains some information of this client and the Rust
 server you connected to.
@@ -85,7 +88,7 @@ in the current session, via Up and Down arrow keys.
 You can scroll the backlog via Page Up and Page Down keys. Currently
 default maximum backlog length is set to *10000* rows.
 
-#### Exiting the client
+### Exiting the client
 
 Simply press **CTRL + C** and you will be asked
 **"Are you sure you want to quit"**,
@@ -95,14 +98,14 @@ Simply press **CTRL + C** and you will be asked
 
 Closing the client wont close the Rust Server you connected to.
 
-# Custom commands
+## Custom commands
 At the moment there is only one custom command, but more will come.
 
 - `getlog length`, e.g. `getlog 1000` which will request last 1000
   lines from Rust Server, parses the log lines and replaces the
   console log with it. This is handy if you want to check the history.
 
-# Motivation
+## Motivation
 I personally got sick and tired of the current Rust Server tools.
 There seemed not to be any out-of-the-box console (at least on Linux,
 as far as I know) and [WebRCON provided by Facepunch](http://facepunch.github.io/webrcon/#/home) only works in a
@@ -114,7 +117,7 @@ Server and still be able to locally manage the server in command line.
 One reason also was to improve my Node.js skills and this seemed to be
 a good project for that.
 
-# To-do
+## To-do
 
 - List all the commands in autocomplete menu
 - Creating separate websocket for this client to connect to.
@@ -137,12 +140,9 @@ a good project for that.
   - Etc...
 - Ability to save output into logfile(s)
 - Refactoring the code
-- Refactoring the code
-- Refactoring the code
-- Turning this package into a proper NPM Module
 
 
-# Screenshot(s)
+## Screenshot(s)
 
 ![v0.1.1 screenshot](https://raw.githubusercontent.com/kirbo/rust-server-cli-rcon/master/screenshots/v0.1.1_1.png)
 ![v0.1.0 screenshot](https://raw.githubusercontent.com/kirbo/rust-server-cli-rcon/master/screenshots/v0.1.0_1.png)
