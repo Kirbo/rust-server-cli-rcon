@@ -5,7 +5,7 @@ Command Line Interface RCON Client for Rust Server
 
 ### Installing Node.js
 
-I suggest using [`nvm`](https://github.com/creationix/nvm) on Unix / OS X systems.
+I suggest using [`nvm`](https://github.com/creationix/nvm).
 
 ### Installing the rust-server-cli-rcon
 
