@@ -4,7 +4,7 @@
   "description": "Command Line Interface RCON Client for Rust Server",
   "main": "index.js",
   "scripts": {
-    "start": "nodejs index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kimmo Saari <kirbo@kirbo-designs.com>",

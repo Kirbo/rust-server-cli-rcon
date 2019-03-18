@@ -11,24 +11,24 @@ https://nodejs.org/en/download/package-manager/
 
     # Clone this repository
     git clone https://github.com/kirbo/rust-server-cli-rcon.git
-    
+
     # Change directory
     cd rust-server-cli-rcon
- 
+
     # Install dependencies
     npm install
- 
+
     # Copy sample config file
-    cp sample.config.js config.js
-    
+    cp example.config.js config.js
+
     # Edit the file you just copied with your favorite editor, e.g.
     nano config.js
-    
+
     # Make sure you have "+rcon.web true" in your Rust server,
     # otherwice this wont work (at least for now)..
 
     # Start the client
-    nodejs index.js
+    node index.js
 
 # Usage
 
@@ -36,13 +36,13 @@ You can configure multiple servers into `config.js` and connect to any
 of them, such as:
 
     # This connects to the first server in config.js
-    nodejs index.js
-    
+    node index.js
+
     # If you specify the "server" argument, you can connect to another
-    nodejs index.js server=another
-    
+    node index.js server=another
+
     # And the last one
-    nodejs index.js server=someOther
+    node index.js server=someOther
 
 The first 3 rows (Header) contains some information of this client and the Rust
 server you connected to.
@@ -105,7 +105,7 @@ At the moment there is only one custom command, but more will come.
 # Motivation
 I personally got sick and tired of the current Rust Server tools.
 There seemed not to be any out-of-the-box console (at least on Linux,
-as far as I know) and [WebRCON provided by Facepunch](http://facepunch.github.io/webrcon/#/home) only works in a 
+as far as I know) and [WebRCON provided by Facepunch](http://facepunch.github.io/webrcon/#/home) only works in a
 browser (not even on `links`). I wanted a console which could be run on
 a server without any desktop GUI and without any modifications done to
 the Rust Server (i.e. Oxide), so that one could run a vanilla Rust
