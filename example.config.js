@@ -13,15 +13,15 @@ var config = {
       // rcon password
       password: 'rcon-password'
     },
-	autoCommands: [
-		'ownerid 76561197964781654 "shroud" "owner"',
-		'moderatorid 76561197961021014 "n0thing" "mod"',
-		'say I\'m watching you'
-	],
-	macros: {
-		day: [ 'env.time 9', 'say Time set to day' ],
-		night: [ 'env.time 23', 'say Time set to night' ]
-	}
+    autoCommands: [
+      'ownerid 76561197964781654 "shroud" "owner"',
+      'moderatorid 76561197961021014 "n0thing" "mod"',
+      'say I\'m watching you'
+    ],
+    macros: {
+      day: [ 'env.time 9', 'say Time set to day' ],
+      night: [ 'env.time 23', 'say Time set to night' ]
+    }
   },
 
   // another server block
