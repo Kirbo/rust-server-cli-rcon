@@ -32,6 +32,7 @@ var config = {
       address: 'another.rust-server.com'
     },
     rcon: {
+      logfile: '',
       port: '28016',
       password: 'another password'
     }
@@ -43,6 +44,7 @@ var config = {
       address: '1.2.3.4'
     },
     rcon: {
+      logfile: '',
       port: '28016',
       password: 'yet another password'
     }
