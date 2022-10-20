@@ -8,6 +8,8 @@ var config = {
     },
     // configurations for rcon
     rcon: {
+      //logfile for this server a blank entry '' will not log
+      logfile: 'LogFile1',
       // rcon port
       port: '28016',
       // rcon password
