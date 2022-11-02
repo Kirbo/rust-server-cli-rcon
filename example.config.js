@@ -8,6 +8,8 @@ var config = {
     },
     // configurations for rcon
     rcon: {
+      //logfile for this server a blank entry '' will not log
+      logfile: 'LogFile1',
       // rcon port
       port: '28016',
       // rcon password
@@ -30,6 +32,7 @@ var config = {
       address: 'another.rust-server.com'
     },
     rcon: {
+      logfile: '',
       port: '28016',
       password: 'another password'
     }
@@ -41,6 +44,7 @@ var config = {
       address: '1.2.3.4'
     },
     rcon: {
+      logfile: '',
       port: '28016',
       password: 'yet another password'
     }
